@@ -1,0 +1,34 @@
+.main-header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 13px;
+  padding: 13px
+}
+
+.main-header-nav {
+  display: flex;
+
+  ul {
+    list-style: none;
+    display: none;
+    gap: 20px;
+  }
+}
+
+.main-header-nav-home {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main-header {
+    ul {
+      display: flex;
+    }
+  }
+
+  .main-header-nav-home {
+    display: block;
+  }
+}
